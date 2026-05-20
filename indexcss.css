@@ -1,0 +1,209 @@
+header {
+  display: flex;
+  font-family: Arial;
+  font-size: 15px;
+  width: 90%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+#Anh {
+  height: 30px;
+  width: 60px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 200px;
+}
+header li {
+  list-style: none;
+}
+.SFS {
+  text-align: center;
+  margin-left: 30px;
+}
+hr {
+  width: 75%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+#Banner img {
+  width: 100%;
+  height: 500px;
+}
+#Nen {
+  background-image: url("../Image/NEN-ITALIA.PNG");
+  width: 100%;
+  height: 350px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+#ND1 {
+  text-align: center;
+  width: 70%;
+  margin: 0px auto;
+  height: 200px;
+  font-family: Arial;
+}
+#ND1 p {
+  font-size: 30px;
+  text-height: bold;
+}
+#ND1 span {
+  font-size: 20px;
+}
+video {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto;
+}
+#GT {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #002366;
+  font-size: 15px;
+}
+#GT img {
+  height: 40px;
+  width: 40px;
+}
+#GT {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#A1 {
+  height: 250px;
+  width: 20%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+#A1 img {
+  height: 200px;
+  width: 100%;
+}
+#A1 span {
+  height: 50px;
+  width: 100%;
+  background-color: #002366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#A2 {
+  height: 250px;
+  width: 20%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+#A2 img {
+  height: 200px;
+  width: 100%;
+}
+#A2 span {
+  height: 50px;
+  width: 100%;
+  background-color: #8b2f29;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#A3 {
+  height: 250px;
+  width: 20%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+#A3 img {
+  height: 200px;
+  width: 100%;
+}
+#A3 span {
+  height: 50px;
+  width: 100%;
+  background-color: #54595f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#A4 {
+  height: 250px;
+  width: 20%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+#A4 img {
+  height: 200px;
+  width: 100%;
+}
+#A4 span {
+  height: 50px;
+  width: 100%;
+  background-color: #82246d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#A {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+#ND2 span {
+  font-weight: 600;
+  font-size: 30px;
+}
+#ND2 p {
+  font-size: 20px;
+}
+#ND2 {
+  text-align: center;
+  margin: 50px;
+}
+footer {
+  margin-top: 50px;
+  background-color: #0b0c5a;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 100px;
+}
+footer img {
+  height: 100px;
+  width: 15%;
+}
+footer span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}

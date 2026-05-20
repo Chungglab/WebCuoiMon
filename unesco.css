@@ -1,0 +1,174 @@
+header {
+  display: flex;
+  font-family: Arial;
+  font-size: 15px;
+  width: 90%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+#Anh {
+  height: 30px;
+  width: 60px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 200px;
+}
+header li {
+  list-style: none;
+}
+.SFS {
+  text-align: center;
+  margin-left: 30px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+.D {
+  font-size: 12px;
+  font-family: Arial;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.D span {
+  text-height: bold;
+}
+
+.hero {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-title {
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+/* Bao bọc toàn bộ khu vực slider */
+.slider-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Nền xám nhạt cho nổi bật slider */
+  padding: 50px 0;
+}
+
+.wp-slider {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; /* Giữ các nút label nằm yên bên trong khung 1000px này */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ cho đẹp */
+}
+
+.slides {
+  width: 400%; /* Có 4 ảnh => 100% * 4 = 400% */
+  height: 100%;
+  display: flex;
+}
+
+/* Ẩn hoàn toàn các nút radio tròn mặc định */
+.slides input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  width: 25%; /* 100% chia cho 4 ảnh = 25% */
+  height: 100%;
+  transition: 1s ease; /* Hiệu ứng lướt mượt mà */
+}
+
+/* Ép ảnh vừa khít với thẻ div bên ngoài */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Khu vực 4 nút bấm điều hướng */
+.navigation {
+  position: absolute;
+  bottom: 30px; /* Đẩy các nút xuống mép dưới của ảnh */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0px 10px; /* Cách đều các nút */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navigation label:hover {
+  background: aqua;
+}
+
+/* =============================================
+   PHÉP THUẬT CỦA CSS SLIDER NẰM Ở ĐÂY
+   Khi radio được check, đẩy lùi bức ảnh đầu tiên (first) sang trái
+============================================= */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}

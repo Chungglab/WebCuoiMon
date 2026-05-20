@@ -17,6 +17,10 @@ header {
   align-items: center;
   justify-content: center;
 }
+header a {
+  text-decoration: none;
+  color: black;
+}
 header ul {
   display: flex;
   align-items: center;
@@ -366,86 +370,109 @@ header li {
   color: #666;
   line-height: 1.6;
 }
-
 /* ── EXPERIENCE BANNER ── */
 .experience {
-  border-radius: 6px;
+  border-radius: 15px; /* Bo góc to hơn cho hiện đại */
   overflow: hidden;
-  background: linear-gradient(120deg, var(--green) 0%, #004d34 100%);
+  /* Dùng dải màu xanh lá cây đậm (chuẩn màu Ý) thay vì biến bị lỗi */
+  background: linear-gradient(120deg, #006847 0%, #003b28 100%);
   color: #fff;
   padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  max-width: 1200px;
-  margin: 60px auto;
+  max-width: 1000px; /* Thu gọn lại một chút để cân đối với 2 lề */
+  margin: 80px auto;
+  box-shadow: 0 15px 30px rgba(0, 104, 71, 0.3); /* Thêm bóng đổ màu xanh */
 }
 
 .experience h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem;
+  font-family: "Playfair Display", Times, serif; /* Thêm font dự phòng */
+  font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 14px;
 }
 
 .experience p {
-  opacity: 0.85;
-  font-size: 0.95rem;
+  opacity: 0.9;
+  font-size: 1.05rem;
   line-height: 1.7;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .experience-btn {
   display: inline-block;
   margin-top: 24px;
-  background: var(--gold);
+  /* Dùng màu cam đất #d35400 đồng bộ với nút Signup/Login của bạn */
+  background: #d35400;
   color: #fff;
-  padding: 14px 32px;
+  padding: 15px 35px;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 2px;
-  transition: background 0.2s;
-  white-space: nowrap;
+  font-weight: bold;
+  border-radius: 5px; /* Bo góc giống bên trang Login */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
 }
 
+/* Hiệu ứng khi di chuột vào nút */
 .experience-btn:hover {
-  background: var(--red);
+  background: #e67e22; /* Sáng hơn khi lướt chuột */
+  transform: translateY(-3px); /* Nảy lên nhẹ */
+  box-shadow: 0 8px 15px rgba(211, 84, 0, 0.5);
 }
 
 .experience-icon {
-  font-size: 7rem;
-  opacity: 0.3;
+  font-size: 9rem; /* Phóng to icon ly rượu */
+  opacity: 0.15; /* Làm mờ ly rượu chìm vào nền */
   flex-shrink: 0;
+  transition: transform 0.5s ease;
 }
 
-/* ── FOOTER ── */
+/* Hiệu ứng siêu xịn: Khi di chuột vào khu vực này, ly rượu sẽ nghiêng và to ra */
+.experience:hover .experience-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* ── RESPONSIVE CHO EXPERIENCE ── */
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+    margin: 40px 16px;
+  }
+  .experience-icon {
+    display: none; /* Ẩn ly rượu trên điện thoại cho đỡ chật */
+  }
+  .experience p {
+    margin: 0 auto;
+  }
+}
+
 footer {
-  background: var(--dark);
-  color: #aaa;
-  padding: 40px;
+  margin-top: 50px;
+  background-color: #0b0c5a;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 100px;
+}
+footer img {
+  height: 100px;
+  width: 15%;
+}
+footer span {
+  display: block;
+  margin-top: 20px;
   text-align: center;
-  font-size: 0.82rem;
-  letter-spacing: 1px;
 }
-
-.footer-flag {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: var(--gold);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   nav {

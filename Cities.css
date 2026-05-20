@@ -1,186 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
-header{
-	display: flex;
-	font-family:Arial;
-	font-size: 15px;
-	width:95%;
-	height:100px;
-	align-items:center;
-	justify-content: space-between;
-	margin: 0px auto;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap");
+header {
+  display: flex;
+  font-family: Arial;
+  font-size: 15px;
+  width: 90%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
 }
-#Anh{
-	height:30px;
-	width: 60px;
+#Anh {
+  height: 30px;
+  width: 60px;
 }
-#logo{
-	display:flex;
-	align-items:center;
-	justify-content: center;
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#logo a{
-	text-decoration: none;
-	color: black;
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 200px;
 }
-header ul{
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	gap: 40px;
-	margin-right: 0;
-	padding: 0;
-	list-style: none;
+header li {
+  list-style: none;
 }
-header li{
-	list-style:none;
-	white-space: nowrap;
+.SFS {
+  text-align: center;
+  margin-left: 30px;
 }
-header a{
-	text-decoration: none;
-	color: black;
+.button:hover {
+  text-decoration: underline;
+  color: #0b0c5a;
 }
-.SFS{
-	text-align: center;
-	margin-left: 30px;
+#D {
+  font-size: 12px;
+  font-family: Arial;
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
-.button:hover{
-	text-decoration: underline;
-	color: #0b0c5a;
+#D span {
+  text-height: bold;
 }
-#D{
-	font-size: 12px;
-	font-family: Arial;
-	margin-left: 100px;
-	margin-bottom: 30px;
+#banner img {
+  min-height: 500px;
+  height: auto;
+  width: 100%;
 }
-#D span{
-	text-height: bold;
+#Nen {
+  background-image: url("../Image/NEN-ITALIA.PNG");
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: center;
 }
-#banner img{
-	min-height: 500px;
-	height: auto;
-	width: 100%;
+#text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 0px auto;
 }
-#Nen{
-	background-image: url("../Image/NEN-ITALIA.PNG");
-	min-height: 300px;
-	height: auto;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	display: center;
+#text h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
-#text{
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	width: 70%;
-	margin: 0px auto;
+#text p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #333;
 }
-#text h1{
-	font-size: 30px;
-	margin-bottom: 15px;
+#GT {
+  margin-top: 30px;
+  margin-left: 80px;
+  font-family: "Montserrat", sans-serif;
+  clear: both;
 }
-#text p{
-	font-size: 22px;
-	line-height: 1.6;
-	color: #333;
+#GT p {
+  font-size: 25px;
 }
-#GT{
-	margin-top: 30px;
-	margin-left: 80px;
-	font-family: 'Montserrat', sans-serif;
-	clear: both;
+#GT span {
+  font-size: 30px;
+  text-height: bold;
 }
-#GT p{
-	font-size: 25px;
+#A,
+#B,
+#C,
+#E {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
 }
-#GT span{
-	font-size: 30px;
-	text-height: bold;
+.Card-item {
+  height: 300px;
+  width: 20%;
 }
-#A,#B,#C,#E{
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	margin-bottom: 50px;
+.Card-item img {
+  height: 250px;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.Card-item{
-	height: 300px;
-	width: 20%;
+.Card-item span {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Card-item img{
-	height: 250px;
-	width: 100%;
-	border-radius: 25px;
-	overflow: hidden;       
-	box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.Img:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
 }
-.Card-item span{
-	height: 50px;
-	width: 100%;
-	font-size: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#Chuyen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  margin: 30px 0;
 }
-.Img:hover{
-	transform: scale(1.05);
-	transition: transform 1s ease;
+#Chuyen a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
-#Chuyen{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	font-family: Arial, sans-serif;
-	margin: 30px 0;
+#Chuyen a.active {
+  background-color: #0b0c5a;
+  color: #fff;
 }
-#Chuyen a{
-	text-decoration: none;
-	font-size: 15px;
-	font-weight: bold;
-	color: #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	transition: all 0.3s ease;
+#Chuyen a.Page-number:not(.active):hover {
+  color: #d47a00;
 }
-#Chuyen a.active{
-	background-color:#0b0c5a;
-	color: #fff;
+#Chuyen a.Next {
+  font-size: 15px;
+  color: #0056b3;
 }
-#Chuyen a.Page-number:not(.active):hover{
-	color:#d47a00;
+#Chuyen a.QL {
+  color: #d1d5db;
+  pointer-events: none;
 }
-#Chuyen a.Next{
-	font-size: 15px;
-	color:#0056b3;
+footer {
+  margin-top: 50px;
+  background-color: #0b0c5a;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 100px;
 }
-#Chuyen a.QL{
-	color:#d1d5db;
-	pointer-events: none;
+footer img {
+  height: 100px;
+  width: 15%;
 }
-footer{
-	margin-top: 50px;
-	background-color: #0b0c5a;
-	height: 200px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	gap:100px;
-}
-footer img{
-	height: 100px;
-	width: 15%;
-}
-footer span{
-	display: block;
-	margin-top: 20px;
-	text-align: center;
+footer span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
 }

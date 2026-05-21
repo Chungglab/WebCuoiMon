@@ -193,7 +193,10 @@ header li {
   max-width: 720px;
   margin: 0 auto;
 }
-
+.food-section img {
+  width: 100%;
+  height: auto;
+}
 /* ── SECTION TITLE ── */
 .section-title {
   text-align: center;
@@ -319,11 +322,9 @@ header li {
   background: linear-gradient(135deg, #d8f0e8, #2d9b6b);
 }
 
-/* ── EXPERIENCE BANNER ── */
 .experience {
-  border-radius: 15px; /* Bo góc to hơn cho hiện đại */
+  border-radius: 15px;
   overflow: hidden;
-  /* Dùng dải màu xanh lá cây đậm (chuẩn màu Ý) thay vì biến bị lỗi */
   background: linear-gradient(120deg, #006847 0%, #003b28 100%);
   color: #fff;
   padding: 60px;
@@ -331,13 +332,13 @@ header li {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  max-width: 1000px; /* Thu gọn lại một chút để cân đối với 2 lề */
+  max-width: 1000px;
   margin: 80px auto;
-  box-shadow: 0 15px 30px rgba(0, 104, 71, 0.3); /* Thêm bóng đổ màu xanh */
+  box-shadow: 0 15px 30px rgba(0, 104, 71, 0.3);
 }
 
 .experience h2 {
-  font-family: "Playfair Display", Times, serif; /* Thêm font dự phòng */
+  font-family: "Playfair Display", Times, serif;
   font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 14px;
@@ -353,7 +354,6 @@ header li {
 .experience-btn {
   display: inline-block;
   margin-top: 24px;
-  /* Dùng màu cam đất #d35400 đồng bộ với nút Signup/Login của bạn */
   background: #d35400;
   color: #fff;
   padding: 15px 35px;
@@ -362,31 +362,28 @@ header li {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 5px; /* Bo góc giống bên trang Login */
+  border-radius: 5px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
 }
 
-/* Hiệu ứng khi di chuột vào nút */
 .experience-btn:hover {
-  background: #e67e22; /* Sáng hơn khi lướt chuột */
-  transform: translateY(-3px); /* Nảy lên nhẹ */
+  background: #e67e22;
+  transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(211, 84, 0, 0.5);
 }
 
 .experience-icon {
-  font-size: 9rem; /* Phóng to icon ly rượu */
-  opacity: 0.15; /* Làm mờ ly rượu chìm vào nền */
+  font-size: 9rem;
+  opacity: 0.15;
   flex-shrink: 0;
   transition: transform 0.5s ease;
 }
 
-/* Hiệu ứng siêu xịn: Khi di chuột vào khu vực này, ly rượu sẽ nghiêng và to ra */
 .experience:hover .experience-icon {
   transform: rotate(15deg) scale(1.1);
 }
 
-/* ── RESPONSIVE CHO EXPERIENCE ── */
 @media (max-width: 768px) {
   .experience {
     flex-direction: column;
@@ -395,7 +392,7 @@ header li {
     margin: 40px 16px;
   }
   .experience-icon {
-    display: none; /* Ẩn ly rượu trên điện thoại cho đỡ chật */
+    display: none;
   }
   .experience p {
     margin: 0 auto;
@@ -422,7 +419,6 @@ footer span {
   margin-top: 20px;
   text-align: center;
 }
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   nav {
     padding: 12px 16px;

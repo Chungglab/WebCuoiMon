@@ -41,9 +41,6 @@ header a {
   margin-left: 100px;
   margin-bottom: 30px;
 }
-.D span {
-  text-height: bold;
-}
 
 .hero {
   position: relative;
@@ -203,7 +200,6 @@ header a {
 }
 #GT span {
   font-size: 30px;
-  text-height: bold;
 }
 #A,
 #B,

@@ -36,15 +36,17 @@ header li {
   text-decoration: underline;
   color: #0b0c5a;
 }
+header a {
+  text-decoration: none;
+  color: black;
+}
 #D {
   font-size: 12px;
   font-family: Arial;
   margin-left: 100px;
   margin-bottom: 30px;
 }
-#D span {
-  text-height: bold;
-}
+
 #banner img {
   min-height: 500px;
   height: auto;
@@ -85,7 +87,6 @@ header li {
 }
 #GT span {
   font-size: 30px;
-  text-height: bold;
 }
 #A,
 #B,

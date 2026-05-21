@@ -156,10 +156,6 @@ header a {
   background: aqua;
 }
 
-/* =============================================
-   PHÉP THUẬT CỦA CSS SLIDER NẰM Ở ĐÂY
-   Khi radio được check, đẩy lùi bức ảnh đầu tiên (first) sang trái
-============================================= */
 #radio1:checked ~ .first {
   margin-left: 0;
 }
@@ -171,4 +167,129 @@ header a {
 }
 #radio4:checked ~ .first {
   margin-left: -75%;
+}
+#Nen {
+  background-image: url("../Image/NEN-ITALIA.PNG");
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: center;
+}
+#text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 0px auto;
+}
+#text h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#text p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #333;
+}
+#GT {
+  margin-top: 30px;
+  margin-left: 80px;
+  font-family: "Montserrat", sans-serif;
+  clear: both;
+}
+#GT p {
+  font-size: 25px;
+}
+#GT span {
+  font-size: 30px;
+  text-height: bold;
+}
+#A,
+#B,
+#C {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.Card-item {
+  height: 300px;
+  width: 20%;
+}
+.Card-item img {
+  height: 250px;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.Card-item span {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Img:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+#Chuyen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  margin: 30px 0;
+}
+#Chuyen a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#Chuyen a.active {
+  background-color: #0b0c5a;
+  color: #fff;
+}
+#Chuyen a.Page-number:not(.active):hover {
+  color: #d47a00;
+}
+#Chuyen a.Next {
+  font-size: 15px;
+  color: #0056b3;
+}
+#Chuyen a.QL {
+  color: #d1d5db;
+  pointer-events: none;
+}
+footer {
+  margin-top: 50px;
+  background-color: #0b0c5a;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 100px;
+}
+footer img {
+  height: 100px;
+  width: 15%;
+}
+footer span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
 }

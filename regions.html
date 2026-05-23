@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Italia.IT</title>
-    <link rel="stylesheet" href="indexcss.css" />
+    <link rel="stylesheet" href="regioncss.css" />
     <link rel="icon" type="image/x-icon" href="Image/LOGO-ITALIA.jpg" />
     <link
       rel="stylesheet"
@@ -33,5 +33,441 @@
         <p><a href="signup.html">Sign in</a></p>
       </span>
     </header>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <br />
+      <a href="index.html">Home</a> &rsaquo; Italian Regions
+      <br />
+      <br />
+      <br />
+    </div>
+    <section class="hero">
+      <img src="images/anhchinh.jpg" alt="" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Italian Regions</h1>
+        <p class="hero-subtitle">
+          From the Alps to the Mediterranean — 21 unique worlds to explore
+        </p>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <div class="regions-intro">
+      <div class="regions-intro-content">
+        <h2>
+          Go in search of the most beautiful places in Italy, get lost in the
+          wonders of its regions
+        </h2>
+        <p>
+          From the snow-capped peaks of the Aosta Valley to the sun-drenched
+          beaches of Sicily, each of Italy's 21 regions offers something
+          uniquely its own. A diversity reflected not only in the landscape and
+          climate, but also in the food, architecture, dialects and traditions.
+          Every region is a journey in itself — and together they form the most
+          beautiful country in the world.
+        </p>
+      </div>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-number">21</div>
+        <div class="stat-label">Regions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">58</div>
+        <div class="stat-label">UNESCO Sites</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">7,600 km</div>
+        <div class="stat-label">Coastline</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5,000+</div>
+        <div class="stat-label">Historic Villages</div>
+      </div>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterRegions('all', this)">
+        All Regions
+      </button>
+      <button class="filter-btn" onclick="filterRegions('north', this)">
+        🏔️ North
+      </button>
+      <button class="filter-btn" onclick="filterRegions('central', this)">
+        🏛️ Central
+      </button>
+      <button class="filter-btn" onclick="filterRegions('south', this)">
+        ☀️ South
+      </button>
+      <button class="filter-btn" onclick="filterRegions('island', this)">
+        🏝️ Islands
+      </button>
+    </div>
+
+    <!-- REGIONS GRID -->
+    <section class="regions-section">
+      <div class="section-title"><h2>Discover Italy's Regions</h2></div>
+      <div class="regions-grid" id="regionsGrid">
+        <!-- NORTH -->
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-aosta">
+            <span class="region-zone-badge">North</span>
+            <img src="images/valley.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Aosta Valley</div>
+            <h3>Aosta Valley</h3>
+            <p>
+              Italy's smallest region, nestled among the highest Alps peaks. A
+              paradise of castles, glaciers and winter sports. Courmayeur and
+              Monte Bianco await year-round.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-piedmont">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Piedmont.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Piedmont</div>
+            <h3>Piedmont</h3>
+            <p>
+              Elegant Turin, world-famous Barolo and Barbaresco wines, the
+              Langhe hills and the Sacra di San Michele. Mountains, mist and
+              magnificent cuisine in one refined region.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-lombardy">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Lombardy.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Lombardy</div>
+            <h3>Lombardy</h3>
+            <p>
+              Milan — Italy's fashion and finance capital — sits alongside
+              breathtaking lakes Como, Maggiore and Garda. Lombardy blends
+              cosmopolitan energy with timeless natural beauty.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-trentino">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Trentino.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Trentino</div>
+            <h3>Trentino</h3>
+            <p>
+              The Dolomites in their most spectacular form. Ski resorts, alpine
+              lakes, medieval castles and farm-to-table traditions. Madonna di
+              Campiglio draws visitors every season.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-tyrol">
+            <span class="region-zone-badge">North</span>
+            <img src="images/South.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">South Tyrol · Alto Adige</div>
+            <h3>South Tyrol</h3>
+            <p>
+              Where Italy meets the Alps with Austrian charm. UNESCO Dolomites,
+              world-class spa resorts, apple orchards and crisp white wines from
+              volcanic terraced vineyards.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-veneto">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Veneto.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Veneto</div>
+            <h3>Veneto</h3>
+            <p>
+              Venice on water, Verona's Roman arena, Lake Garda and the Prosecco
+              hills. Veneto is a region of wonders — from art cities of global
+              renown to pristine Dolomite nature.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-friuli">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Friuli.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Friuli-Venezia Giulia</div>
+            <h3>Friuli-Venezia Giulia</h3>
+            <p>
+              A crossroads of cultures where the Friulian Dolomites meet the
+              Adriatic. Trieste — elegant and cosmopolitan — anchors a region
+              rich in Roman ruins, wine and wild nature.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-liguria">
+            <span class="region-zone-badge">North</span>
+            <img src="images/Liguria.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Liguria</div>
+            <h3>Liguria</h3>
+            <p>
+              The Italian Riviera: pastel villages clinging to cliffs, hidden
+              beaches and Portofino's glamour. Cinque Terre is one of Italy's
+              most photographed — and most magical — places.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="north">
+          <div class="region-card-img card-emilia">
+            <span class="region-zone-badge">North</span>
+            <img src="images/emilia.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Emilia-Romagna</div>
+            <h3>Emilia-Romagna</h3>
+            <p>
+              Italy's food capital: birthplace of Parmigiano, prosciutto di
+              Parma, tagliatelle al ragù and Lambrusco. Bologna's arcades,
+              Ravenna's mosaics and Rimini's beaches complete the picture.
+            </p>
+          </div>
+        </div>
+
+        <!-- CENTRAL -->
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-tuscany">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Tuscany.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Tuscany</div>
+            <h3>Tuscany</h3>
+            <p>
+              Florence, Siena, Pisa and the rolling hills of Chianti. Tuscany is
+              Renaissance art, cypress-lined roads, world-famous wine and a
+              landscape that looks like a painting.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-umbria">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Umbria.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Umbria</div>
+            <h3>Umbria</h3>
+            <p>
+              The Green Heart of Italy. Assisi's Basilica, Perugia's chocolate
+              festival, Gubbio's medieval streets and Norcia's legendary black
+              truffle — Umbria rewards the curious traveller.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-marche">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Marche.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Marche</div>
+            <h3>Marche</h3>
+            <p>
+              Adriatic beaches, the Renaissance Palazzo Ducale di Urbino,
+              medieval villages and caves of Frasassi. One of Italy's best-kept
+              secrets, rich in art and authentic flavours.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-lazio">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Lazio.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Lazio</div>
+            <h3>Lazio</h3>
+            <p>
+              Rome — the Eternal City — is the crown jewel, but Lazio also
+              offers volcanic lakes, Pontine islands, medieval villages and the
+              gardens of Ninfa. A region far beyond its capital.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-abruzzo">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Abruzzo.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Abruzzo</div>
+            <h3>Abruzzo</h3>
+            <p>
+              Where the Apennines plunge toward the Adriatic. Italy's only
+              Apennine glacier, Gran Sasso, national parks sheltering wolves and
+              bears, and beautiful coastline — wild and untouched.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="central">
+          <div class="region-card-img card-molise">
+            <span class="region-zone-badge">Central</span>
+            <img src="images/Molise.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Molise</div>
+            <h3>Molise</h3>
+            <p>
+              Italy's hidden region — small, ancient and magnificently
+              overlooked. Roman ruins at Saepinum, shepherd transhumance routes,
+              coastal cliffs and some of Italy's most authentic food.
+            </p>
+          </div>
+        </div>
+
+        <!-- SOUTH -->
+        <div class="region-card" data-zone="south">
+          <div class="region-card-img card-campania">
+            <span class="region-zone-badge">South</span>
+            <img src="images/campania.jpg" alt="Campania" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Campania</div>
+            <h3>Campania</h3>
+            <p>
+              Naples, Pompeii, the Amalfi Coast, Capri and Ischia. Campania is a
+              sensory overload — dramatic coastlines, ancient ruins, volcanic
+              landscapes and the birthplace of pizza.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="south">
+          <div class="region-card-img card-apulia">
+            <span class="region-zone-badge">South</span>
+            <img src="images/Apulia.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Apulia · Puglia</div>
+            <h3>Apulia</h3>
+            <p>
+              Between two seas — Adriatic and Ionian. Whitewashed trulli of
+              Alberobello, Castel del Monte, crystal-clear waters and
+              orecchiette pasta. The sun-drenched heel of Italy's boot.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="south">
+          <div class="region-card-img card-basilicata">
+            <span class="region-zone-badge">South</span>
+            <img src="images/Basilicata.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Basilicata</div>
+            <h3>Basilicata</h3>
+            <p>
+              Matera — UNESCO City of Stones — is among the world's oldest
+              continuously inhabited cities. Ancient Lucania, Pollino National
+              Park and two seas frame this deeply moving region.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="south">
+          <div class="region-card-img card-calabria">
+            <span class="region-zone-badge">South</span>
+            <img src="images/Calabria.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Calabria</div>
+            <h3>Calabria</h3>
+            <p>
+              The tip of the Italian boot, jutting into the Mediterranean. The
+              Riace Bronzes, Tropea's clifftop cathedral, the Sila national park
+              and some of the clearest water in Italy.
+            </p>
+          </div>
+        </div>
+
+        <!-- ISLANDS -->
+        <div class="region-card" data-zone="island">
+          <div class="region-card-img card-sardinia">
+            <span class="region-zone-badge">Island</span>
+            <img src="images/dao.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Sardinia</div>
+            <h3>Sardinia</h3>
+            <p>
+              Emerald waters, ancient nuraghi towers, the wild Barbagia interior
+              and Costa Smeralda's glamour. Sardinia is a world apart — proud,
+              ancient and breathtakingly beautiful.
+            </p>
+          </div>
+        </div>
+
+        <div class="region-card" data-zone="island">
+          <div class="region-card-img card-sicily">
+            <span class="region-zone-badge">Island</span>
+            <img src="images/dao2.jpg" alt="" />
+          </div>
+          <div class="region-card-body">
+            <div class="region-card-tag">Sicily</div>
+            <h3>Sicily</h3>
+            <p>
+              The Mediterranean's largest island: Etna's fire, Valle dei
+              Templi's Greek grandeur, Palermo's street food markets, the
+              Aeolian Islands and the finest cannoli you'll ever taste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS BANNER -->
+    <div class="highlights">
+      <div>
+        <h2>Plan your Italian regional journey</h2>
+        <p>
+          Whether you crave snow-capped peaks, sun-drenched coasts, historic
+          hill towns or volcanic islands, Italy's 21 regions offer a lifetime of
+          discovery. Let us help you find your perfect Italian escape.
+        </p>
+        <a href="#" class="highlights-btn">Explore Itineraries</a>
+      </div>
+      <div class="highlights-icon">🗺️</div>
+    </div>
+    <script src="region.js"></script>
   </body>
 </html>

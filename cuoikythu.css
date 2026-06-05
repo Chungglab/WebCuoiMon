@@ -90,7 +90,6 @@ header li {
   color: var(--green);
 }
 
-/* ── HERO ── */
 .hero {
   position: relative;
   height: 320px;
@@ -136,7 +135,6 @@ header li {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* ── BREADCRUMB ── */
 .breadcrumb {
   padding: 12px 40px;
   font-size: 0.78rem;
@@ -153,7 +151,6 @@ header li {
   text-decoration: underline;
 }
 
-/* ── FOOD CULTURE INTRO ── */
 .food-culture-intro {
   position: relative;
   overflow: hidden;
@@ -197,7 +194,6 @@ header li {
   width: 100%;
   height: auto;
 }
-/* ── SECTION TITLE ── */
 .section-title {
   text-align: center;
   margin: 0 0 40px;
@@ -220,7 +216,6 @@ header li {
   margin: 10px auto 0;
 }
 
-/* ── FOOD GRID ── */
 .food-section {
   padding: 60px 40px;
   background: #fff;
@@ -302,7 +297,6 @@ header li {
   border-color: var(--red);
 }
 
-/* ── MÀU CÁC CARD ── */
 .card-pasta {
   background: linear-gradient(135deg, #f5e6c8, #e8c97a);
 }
@@ -320,68 +314,6 @@ header li {
 }
 .card-seafood {
   background: linear-gradient(135deg, #d8f0e8, #2d9b6b);
-}
-
-.experience {
-  border-radius: 15px;
-  overflow: hidden;
-  background: linear-gradient(120deg, #006847 0%, #003b28 100%);
-  color: #fff;
-  padding: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 80px auto;
-  box-shadow: 0 15px 30px rgba(0, 104, 71, 0.3);
-}
-
-.experience h2 {
-  font-family: "Playfair Display", Times, serif;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-bottom: 14px;
-}
-
-.experience p {
-  opacity: 0.9;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  max-width: 600px;
-}
-
-.experience-btn {
-  display: inline-block;
-  margin-top: 24px;
-  background: #d35400;
-  color: #fff;
-  padding: 15px 35px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
-}
-
-.experience-btn:hover {
-  background: #e67e22;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(211, 84, 0, 0.5);
-}
-
-.experience-icon {
-  font-size: 9rem;
-  opacity: 0.15;
-  flex-shrink: 0;
-  transition: transform 0.5s ease;
-}
-
-.experience:hover .experience-icon {
-  transform: rotate(15deg) scale(1.1);
 }
 
 @media (max-width: 768px) {

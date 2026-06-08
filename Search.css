@@ -46,12 +46,9 @@ header a {
   margin-left: 50px;
   margin-bottom: 20px;
 }
-#D span {
-  text-height: bold;
-}
+
 #Text p {
   font-family: "Montserrat", sans-serif;
-  text-height: bold;
   text-align: center;
   font-size: 40px;
 }

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap");
+header {
+  display: flex;
+  font-family: Arial;
+  font-size: 15px;
+  width: 90%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+#Anh {
+  height: 30px;
+  width: 60px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 200px;
+}
+header li {
+  list-style: none;
+}
+.SFS {
+  text-align: center;
+  margin-left: 30px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+.button:hover {
+  text-decoration: underline;
+  color: #0b0c5a;
+}
+#D {
+  font-size: 12px;
+  font-family: Arial;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#D span {
+  text-height: bold;
+}
+#Text p {
+  font-family: "Montserrat", sans-serif;
+  text-height: bold;
+  text-align: center;
+  font-size: 40px;
+}
+#search {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+#search {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#search input {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2.5px solid #0b1a57;
+  background-color: #ffffff;
+  border-radius: 25px;
+  outline: none;
+  width: 600px;
+}
+#search button {
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #3b5ca9;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background 0.2s;
+}
+#menu {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.M {
+  font-size: 20px;
+}
+.M:hover {
+  color: blue;
+}
+footer {
+  margin-top: 50px;
+  background-color: #0b0c5a;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 100px;
+}
+footer img {
+  height: 100px;
+  width: 15%;
+}
+footer span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}

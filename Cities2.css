@@ -177,7 +177,6 @@ footer span {
   text-align: center;
 }
 
-/* --- RESPONSIVE CHO MÀN HÌNH NHỎ (MOBILE/TABLET) --- */
 @media (max-width: 768px) {
   header {
     flex-direction: column;

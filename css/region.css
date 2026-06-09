@@ -52,7 +52,6 @@ body {
   color: var(--dark);
 }
 
-/* ── NAV ── */
 nav {
   position: sticky;
   top: 0;
@@ -119,7 +118,6 @@ nav {
   color: var(--green);
 }
 
-/* ── HERO ── */
 .hero {
   position: relative;
   height: 480px;
@@ -132,7 +130,6 @@ nav {
   object-position: center;
   display: block;
 }
-/* Fallback gradient if no image */
 .hero-bg-fallback {
   width: 100%;
   height: 100%;
@@ -180,7 +177,6 @@ nav {
   opacity: 0.9;
 }
 
-/* ── BREADCRUMB ── */
 .breadcrumb {
   padding: 14px 60px;
   font-size: 0.82rem;
@@ -197,7 +193,6 @@ nav {
   text-decoration: underline;
 }
 
-/* ── INTRO ── */
 .regions-intro {
   position: relative;
   background: #fff;
@@ -232,7 +227,6 @@ nav {
   color: var(--gray);
 }
 
-/* ── FILTER TABS ── */
 .filter-bar {
   display: flex;
   gap: 10px;
@@ -259,7 +253,6 @@ nav {
   color: #fff;
 }
 
-/* ── SECTION TITLE ── */
 .section-title {
   padding: 10px 60px 24px;
 }
@@ -279,7 +272,6 @@ nav {
   background: linear-gradient(to right, var(--green), transparent);
 }
 
-/* ── REGION GRID ── */
 .regions-section {
   padding: 0 60px 60px;
 }
@@ -315,7 +307,6 @@ nav {
   position: relative;
   overflow: hidden;
 }
-/* màu card */
 .card-aosta {
   background: #2e6da4;
 }
@@ -441,7 +432,6 @@ img {
   text-decoration: underline;
 }
 
-/* ── STATS ROW ── */
 .stats-row {
   background: #fff;
   border-top: 1px solid var(--border);
@@ -470,7 +460,6 @@ img {
   margin-top: 4px;
 }
 
-/* ── FOOTER ── */
 footer {
   background: var(--dark);
   color: rgba(255, 255, 255, 0.7);
@@ -512,7 +501,6 @@ footer span {
   text-align: center;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav {
     padding: 0 20px;

@@ -86,13 +86,12 @@ header a {
   line-height: 1.2;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
-/* Bao bọc toàn bộ khu vực slider */
 .slider-section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4; /* Nền xám nhạt cho nổi bật slider */
+  background-color: #f4f4f4;
   padding: 50px 0;
 }
 
@@ -101,38 +100,35 @@ header a {
   height: 600px;
   border-radius: 10px;
   overflow: hidden;
-  position: relative; /* Giữ các nút label nằm yên bên trong khung 1000px này */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ cho đẹp */
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .slides {
-  width: 400%; /* Có 4 ảnh => 100% * 4 = 400% */
+  width: 400%;
   height: 100%;
   display: flex;
 }
 
-/* Ẩn hoàn toàn các nút radio tròn mặc định */
 .slides input[type="radio"] {
   display: none;
 }
 
 .slide {
-  width: 25%; /* 100% chia cho 4 ảnh = 25% */
+  width: 25%;
   height: 100%;
-  transition: 1s ease; /* Hiệu ứng lướt mượt mà */
+  transition: 1s ease;
 }
 
-/* Ép ảnh vừa khít với thẻ div bên ngoài */
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Khu vực 4 nút bấm điều hướng */
 .navigation {
   position: absolute;
-  bottom: 30px; /* Đẩy các nút xuống mép dưới của ảnh */
+  bottom: 30px; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -144,7 +140,7 @@ header a {
   height: 15px;
   border-radius: 50%;
   border: 2px solid white;
-  margin: 0px 10px; /* Cách đều các nút */
+  margin: 0px 10px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -291,7 +287,6 @@ footer span {
   text-align: center;
 }
 
-/* --- RESPONSIVE CHO MÀN HÌNH NHỎ (MOBILE/TABLET) --- */
 @media (max-width: 768px) {
   header {
     flex-direction: column;

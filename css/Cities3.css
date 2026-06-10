@@ -59,7 +59,7 @@ header a {
   width: 100%;
   display: flex;
   align-items: center;
-  display: center;
+  justify-content: center;
 }
 #text {
   text-align: center;
@@ -152,7 +152,6 @@ header a {
 }
 #Chuyen a.QL {
   color: #0056b3;
-  pointer-events: none;
 }
 footer {
   margin-top: 50px;
